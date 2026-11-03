@@ -1,0 +1,64 @@
+# Personal archives and packaged/private backups
+*.life
+*.zip
+*.7z
+*.rar
+*.bak
+*.backup
+backups/
+private/
+private-backups/
+*-baseline-*
+historical-snapshots/
+*.orig
+
+# Local dependencies, caches and configuration
+node_modules/
+.cache/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.codex/
+.agents/
+.aws/
+.vscode/
+.idea/
+*.local
+*.local.*
+
+# Temporary files and browser/test output
+tmp/
+temp/
+release-output/
+*.tmp
+*.temp
+*.log
+*.trace
+*.har
+test-results/
+playwright-report/
+coverage/
+browser-profile*/
+user-data*/
+screenshots/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.mp4
+*.webm
+
+# PDFs and font resources are pending distribution review
+*.pdf
+*.ttf
+*.ttc
+*.otf
+*.woff
+*.woff2
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini

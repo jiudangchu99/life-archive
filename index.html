@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>人生存档｜给自己的数字人生做一份长期备份</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主导航">
+      <a class="brand" href="#home" aria-label="人生存档首页">
+        <span class="brand-mark" aria-hidden="true">生</span>
+        <span><strong>人生存档</strong><small>长期备份你的重要线索</small></span>
+      </a>
+
+      <details class="mobile-nav-menu">
+        <summary>导航菜单</summary>
+        <nav class="mobile-nav-list" aria-label="移动端主导航">
+          <a class="nav-item active" href="#home" data-view="home"><span aria-hidden="true">⌂</span>首页</a>
+          <a class="nav-item" href="#digital" data-view="digitalWorld"><span aria-hidden="true">◎</span>我的数字世界</a>
+          <a class="nav-item" href="#real" data-view="realWorld"><span aria-hidden="true">◇</span>我的现实世界</a>
+          <a class="nav-item" href="#care" data-view="peopleAndMatters"><span aria-hidden="true">♡</span>我在乎的人和事</a>
+          <a class="nav-item" href="#someday" data-view="ifOneDay"><span aria-hidden="true">✦</span>如果有一天</a>
+          <a class="nav-item" href="#check" data-view="check"><span aria-hidden="true">✓</span>检查我的存档</a>
+          <a class="nav-item" href="#guide" data-open-guide><span aria-hidden="true">?</span>安全与使用说明</a>
+        </nav>
+      </details>
+
+      <nav class="nav-list">
+        <a class="nav-item active" href="#home" data-view="home"><span aria-hidden="true">⌂</span>首页</a>
+        <a class="nav-item" href="#digital" data-view="digitalWorld"><span aria-hidden="true">◎</span>我的数字世界</a>
+        <a class="nav-item" href="#real" data-view="realWorld"><span aria-hidden="true">◇</span>我的现实世界</a>
+        <a class="nav-item" href="#care" data-view="peopleAndMatters"><span aria-hidden="true">♡</span>我在乎的人和事</a>
+        <a class="nav-item" href="#someday" data-view="ifOneDay"><span aria-hidden="true">✦</span>如果有一天</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <a class="nav-item" href="#check" data-view="check"><span aria-hidden="true">✓</span>检查我的存档</a>
+        <a class="nav-item" href="#guide" data-open-guide><span aria-hidden="true">?</span>安全与使用说明</a>
+        <div class="offline-note">
+          <span class="offline-dot" aria-hidden="true"></span>
+          <span>完全在本机运行<br><small>不会上传任何内容</small></span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content" id="home">
+      <header class="topbar">
+        <div class="mobile-brand">人生存档</div>
+        <p class="editing-state"><span class="state-dot" aria-hidden="true"></span>未保存临时内容 <span>· 尚未开始</span></p>
+        <div class="top-actions" aria-label="存档操作">
+          <button class="button button-quiet" type="button" data-open-print>导出打印</button>
+          <button class="button button-quiet" type="button" data-import-life>导入人生存档</button>
+          <button class="button button-quiet" type="button" data-save-local>保存人生存档</button>
+          <button class="button button-primary" type="button" data-backup-life>保存并备份</button>
+        </div>
+      </header>
+
+      <section class="welcome-grid home-section" aria-labelledby="welcome-title">
+        <div class="welcome-copy">
+          <p class="eyebrow">给未来多留一份从容</p>
+          <h1 id="welcome-title">欢迎回来</h1>
+          <div class="archive-owner"><span>存档人：<span data-owner-name>未设置</span></span><button class="text-button" type="button" data-edit-owner>设置</button></div>
+          <p class="welcome-text"><span>整理不是为了预设某一天，</span><span>而是让重要的人、事和线索，在需要时都能被温柔地找到。</span></p>
+          <div class="welcome-actions">
+            <button class="button button-primary" type="button" data-open-quick-start>开始 5 分钟快速整理</button>
+            <button class="text-button" type="button" data-open-example>查看示例人生存档</button>
+          </div>
+        </div>
+        <div class="progress-orbit" aria-label="人生存档完成度 0%">
+          <div class="progress-ring"><span>0<small>%</small></span></div>
+          <p>人生存档完成度</p>
+          <small>按自己的节奏慢慢整理</small>
+        </div>
+      </section>
+
+      <section class="save-notice home-section" aria-label="保存提示">
+        <span class="notice-icon" aria-hidden="true">⌁</span>
+        <div>
+          <strong>未保存内容只保留在当前页面</strong>
+          <p>新增或修改不会自动保存。请主动点击“保存人生存档”；需要迁移或交接时，再使用“保存并备份”生成 .life 文件。</p>
+        </div>
+        <a class="text-button" href="#guide" data-open-guide>了解安全说明 <span aria-hidden="true">→</span></a>
+      </section>
+
+      <section class="section-heading home-section" aria-labelledby="modules-title">
+        <div>
+          <p class="eyebrow">从你熟悉的地方开始</p>
+          <h2 id="modules-title">四个重要章节</h2>
+        </div>
+        <p>每个章节都可以慢慢补充。</p>
+      </section>
+
+      <section class="module-grid home-section" aria-label="四大模块">
+        <article class="module-card digital" id="digital" data-module="digitalWorld" role="button" tabindex="0">
+          <div class="module-top"><span class="module-icon" aria-hidden="true">◎</span><span class="module-count">0 张卡片</span></div>
+          <h3>我的数字世界</h3>
+          <p>账号、设备、作品和那些藏在屏幕里的重要线索。</p>
+          <div class="module-footer"><div class="tiny-progress"><span></span></div><strong>0%</strong></div>
+          <span class="module-arrow" aria-hidden="true">→</span>
+        </article>
+
+        <article class="module-card real" id="real" data-module="realWorld" role="button" tabindex="0">
+          <div class="module-top"><span class="module-icon" aria-hidden="true">◇</span><span class="module-count">0 张卡片</span></div>
+          <h3>我的现实世界</h3>
+          <p>资料、物品、资产线索与重要文件的存放位置。</p>
+          <div class="module-footer"><div class="tiny-progress"><span></span></div><strong>0%</strong></div>
+          <span class="module-arrow" aria-hidden="true">→</span>
+        </article>
+
+        <article class="module-card care" id="care" data-module="peopleAndMatters" role="button" tabindex="0">
+          <div class="module-top"><span class="module-icon" aria-hidden="true">♡</span><span class="module-count">0 张卡片</span></div>
+          <h3>我在乎的人和事</h3>
+          <p>宠物、纪念、作品，以及想好好交代的安排。</p>
+          <div class="module-footer"><div class="tiny-progress"><span></span></div><strong>0%</strong></div>
+          <span class="module-arrow" aria-hidden="true">→</span>
+        </article>
+
+        <article class="module-card someday" id="someday" data-module="ifOneDay" role="button" tabindex="0">
+          <div class="module-top"><span class="module-icon" aria-hidden="true">✦</span><span class="module-count">0 张卡片</span></div>
+          <h3>如果有一天</h3>
+          <p>联系人、执行人和希望被理解的最后安排。</p>
+          <div class="module-footer"><div class="tiny-progress"><span></span></div><strong>0%</strong></div>
+          <span class="module-arrow" aria-hidden="true">→</span>
+        </article>
+      </section>
+
+      <section class="workspace-grid home-section">
+        <section class="panel" aria-labelledby="start-title">
+          <div class="panel-heading">
+            <div><p class="eyebrow">第一次使用</p><h2 id="start-title">5 分钟快速开始</h2></div>
+            <span class="soft-badge">可选</span>
+          </div>
+          <p class="quick-start-intro">第一次使用不知道从哪里开始？可以先从几件常见的事情整理。没有的项目直接跳过就好，以后也可以随时补充。</p>
+          <ol class="starter-list">
+            <li><button class="starter-shortcut" type="button" data-shortcut-module="ifOneDay" data-shortcut-type="contact"><span class="starter-number">01</span><span class="starter-copy"><strong>记下一个重要联系人</strong><small>现在不想设置也可以跳过。</small></span><i aria-hidden="true">+</i></button></li>
+            <li><button class="starter-shortcut" type="button" data-shortcut-module="digitalWorld"><span class="starter-number">02</span><span class="starter-copy"><strong>整理 0～3 个常用账号</strong><small>没有需要记录的账号就跳过。</small></span><i aria-hidden="true">+</i></button></li>
+            <li><button class="starter-shortcut" type="button" data-shortcut-module="realWorld" data-shortcut-type="valuableItem"><span class="starter-number">03</span><span class="starter-copy"><strong>记下一件重要物品</strong><small>没有需要记录的也可以跳过，以后可以随时补充。</small></span><i aria-hidden="true">+</i></button></li>
+            <li><button class="starter-shortcut" type="button" data-shortcut-module="peopleAndMatters" data-shortcut-type="specialArrangement"><span class="starter-number">04</span><span class="starter-copy"><strong>补充一件想提前交代的事</strong><small>暂时没有也没关系，以后可以再补。</small></span><i aria-hidden="true">+</i></button></li>
+          </ol>
+        </section>
+
+        <aside class="panel archive-panel" id="check" aria-labelledby="check-title">
+          <div class="panel-heading"><div><p class="eyebrow">状态提醒</p><h2 id="check-title">检查我的存档</h2></div><span class="check-icon check-icon-neutral" aria-hidden="true">•</span></div>
+          <p class="archive-copy">这里不是必填清单，只显示几个重要方向目前的状态。</p>
+          <ul class="check-list">
+            <li data-home-check="primaryContact"><span class="empty-check" aria-hidden="true"></span>第一联系人</li>
+            <li data-home-check="executor"><span class="empty-check" aria-hidden="true"></span>执行人安排</li>
+            <li data-home-check="digitalWorld"><span class="empty-check" aria-hidden="true"></span>我的数字世界</li>
+            <li data-home-check="realWorld"><span class="empty-check" aria-hidden="true"></span>我的现实世界</li>
+            <li data-home-check="formalArchive"><span class="empty-check" aria-hidden="true"></span>本机保存状态</li>
+          </ul>
+          <button class="button button-secondary" type="button" data-open-check>查看当前状态</button>
+        </aside>
+      </section>
+
+      <section class="module-preview" id="workspace" aria-labelledby="preview-title">
+        <div class="preview-heading"><div><p class="eyebrow">模块页预览</p><h2 id="preview-title">我的数字世界</h2><p>账号、数字资产、作品和设备都在这里整理。暂时还没有卡片。</p></div><button class="button button-primary" type="button" data-add-card="digitalWorld">新增一张卡片</button></div>
+        <div class="empty-state">
+          <span class="empty-art" aria-hidden="true">◎</span>
+          <h3>从一个熟悉的账号开始</h3>
+          <p>例如社交账号、邮箱、云盘或游戏账号。请只填写密码保存位置，不要填写真实密码。</p>
+          <div class="tag-row"><span>社交账号</span><span>邮箱与云盘</span><span>游戏账号</span><span>设备信息</span></div>
+        </div>
+      </section>
+
+      <footer id="guide">
+        <span class="footer-mark" aria-hidden="true">⌁</span>
+        <p>“保存人生存档”保存到当前浏览器；“保存并备份”会额外生成用于迁移或交接的 .life 文件。所有操作均在当前设备内完成。</p>
+        <button class="footer-clear" type="button" data-clear-local>清空人生存档</button>
+      </footer>
+    </main>
+  </div>
+  <dialog id="card-dialog" class="app-dialog"></dialog>
+  <dialog id="owner-dialog" class="app-dialog" aria-labelledby="owner-dialog-title"></dialog>
+  <dialog id="quick-start-dialog" class="app-dialog"></dialog>
+  <dialog id="check-dialog" class="app-dialog"></dialog>
+  <dialog id="export-dialog" class="app-dialog"></dialog>
+  <dialog id="import-dialog" class="app-dialog"></dialog>
+  <dialog id="print-dialog" class="app-dialog"></dialog>
+  <dialog id="example-dialog" class="app-dialog"></dialog>
+  <dialog id="guide-dialog" class="app-dialog"></dialog>
+  <dialog id="user-notice-dialog" class="app-dialog"></dialog>
+  <dialog id="clear-dialog" class="app-dialog"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
